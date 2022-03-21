@@ -1,0 +1,211 @@
+/* The Modal (background) */
+.modal {
+	/*display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.10); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float:none;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-box {
+	font-family: 'Poppins', sans-serif;
+}
+
+.show-modal {
+	color: #fff;
+	background: linear-gradient(to right, #33a3ff, #0675cf, #49a6fd);
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding: 10px 15px;
+	margin: 200px auto 0;
+	border: 2px solid #888;
+	outline: none;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	display: block;
+	/*transition: all 0.3s ease 0s;*/
+}
+
+.date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-modal:hover, .show-modal:focus {
+	color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	outline: none;
+}
+
+.modal-dialog {
+	width: 400px;
+	margin: 70px auto 0;
+}
+
+.modal-dialog {
+	transform: scale(0.5);
+}
+
+.modal-dialog {
+	transform: scale(1);
+}
+
+.modal-dialog .modal-content {
+	text-align: center;
+	border: none;
+}
+
+.modal-content .close {
+	color: #fff;
+	background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+	font-size: 20px;
+	font-weight: 100;
+	text-align: start;
+	text-shadow: none;
+	line-height: 27px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 1;
+	position: absolute;
+	left: auto;
+	right: 9px;
+	top: 6px;
+	z-index: 1px;
+	transition: all 0.3s;
+	display: flex;
+	justify-content: center;
+}
+
+.modal-content .close:hover {
+	color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.close:focus {
+	outline: none;
+}
+
+.modal-body {
+	padding: 60px 40px 40px !important;
+}
+
+.modal-body .title {
+	color: #026fd4;
+	font-size: 33px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0 0 10px;
+}
+
+.modal-body .description {
+	color: #9A9EA9;
+	font-size: 16px;
+	margin: 0 0 20px;
+}
+
+.modal-body .form-group {
+	border-radius: 5px;
+	border: 1px solid #888;
+	text-align: left;
+	margin-bottom: 20px;
+	position: relative;
+	
+}
+
+
+.modal-body .input-icon {
+	color: #777;
+	font-size: 18px;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	left: 20px;
+}
+
+.modal-body .form-control {
+	font-size: 17px;
+	height: 45px;
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid #eee;
+	border-radius: 5px;
+	box-shadow: none;
+	outline: none;
+	justify-content: left;
+}
+
+.form-control::placeholder {
+	color: #AEAFB1;
+}
+
+.gender {
+	padding-bottom: 20px;
+}
+
+.modal-content .modal-body .btn {
+	color: #fff;
+	background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 38px;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	border: none;
+	border-radius: 5px;
+	border: none;
+	display: inline-block;
+	/*transition: all 0.6s ease 0s;*/
+}
+
+.modal-content .modal-body .btn:hover {
+	color: #fff;
+	letter-spacing: 2px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content .modal-body .btn:focus {
+	outline: none;
+}
+
+@media only screen and (max-width: 480px) {
+	.modal-dialog {
+		width: 95% !important;
+	}
+	.modal-content .modal-body {
+		padding: 60px 20px 40px !important;
+	}
+}
